@@ -3,10 +3,10 @@ package lyrics
 import (
 	"errors"
 
-	"github.com/vladcomp/lyric-api-go/genius"
-	"github.com/vladcomp/lyric-api-go/lyricswikia"
-	"github.com/vladcomp/lyric-api-go/musixmatch"
-	"github.com/vladcomp/lyric-api-go/songlyrics"
+	"github.com/gitsakos/lyric-api-go/genius"
+	"github.com/gitsakos/lyric-api-go/lyricswikia"
+	"github.com/gitsakos/lyric-api-go/musixmatch"
+	"github.com/gitsakos/lyric-api-go/songlyrics"
 )
 
 type provider interface {
