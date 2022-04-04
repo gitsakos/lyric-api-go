@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/rhnvrm/lyric-api-go/goquery_helpers"
+	"github.com/gitsakos/lyric-api-go/goquery_helpers"
 )
 
 // Genius Provider.
