@@ -75,6 +75,9 @@ func scrape(url string) (string, error) {
 	}
 	defer res.Body.Close()
 
+	if res.StatusCode != 200 {
+		return "", errors.New("non 200 error code from API, got " + string(res.StatusCode) + " : " + res.Status)
+	}
 	// Create a goquery document from the HTTP response
 	document, err2 := goquery.NewDocumentFromReader(res.Body)
 	if err2 != nil {
