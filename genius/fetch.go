@@ -112,7 +112,7 @@ func (g *Genius) Fetch(artist, song string) (string, error) {
 
 	lyric, err2 := scrape(u)
 	if err2 != nil {
-		log.Println("error in genius provider during scraping while attempting genius provider ", err)
+		log.Println("error in genius provider during scraping while attempting genius provider ", err2)
 		return "", err2
 	}
 	return lyric, nil
